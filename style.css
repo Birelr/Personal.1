@@ -1,0 +1,41 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            overflow: hidden;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        .text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            white-space: pre;
+        }
+
+        .cursor {
+            position: absolute;
+            top: 37px;
+            left: 155px;
+            width: 1px;
+            height: 15px;
+            background-color: #ffffff;
+            animation: blinkExpand 1.2s infinite;
+        }
+
+        @keyframes blinkExpand {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(0);
+            }
+        }
